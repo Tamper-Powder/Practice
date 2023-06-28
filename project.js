@@ -5,6 +5,10 @@ const phoneBook = {
         "Jim Smith": 111111111
     },
     rem(del){
+        if(!( del in this.list)){
+            console.log("I don't know this value");
+            return;
+        }
          delete phoneBook.list[del]; 
     },
     add(name, number){
