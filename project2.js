@@ -6,6 +6,6 @@ const phoneBook ={
     },
    };
       for (const name in phoneBook.list){
-        console.log(name,phoneBook.list[name]); 
+        console.log(name,"-",phoneBook.list[name]); 
         
     };
