@@ -9,9 +9,9 @@ const phoneBook = {
        
     },
     rem(){
-        delete this.list[""]
+        delete phoneBook["Jim Smith"]; 
     }
 };
 phoneBook.add("GGGGG", 1233454);
-phoneBook.rem("John");
+phoneBook.rem();
 console.log(phoneBook.list);
