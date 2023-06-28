@@ -4,14 +4,14 @@ const phoneBook = {
         "Jane Doe": 987654321,
         "Jim Smith": 111111111
     },
+    rem(del){
+         delete phoneBook.list[del]; 
+    },
     add(name, number){
         this.list[name] = number;
        
-    },
-    rem(){
-        delete phoneBook["Jim Smith"]; 
-    }
+    }    
 };
 phoneBook.add("GGGGG", 1233454);
-phoneBook.rem();
+phoneBook.rem("Jane Doe");
 console.log(phoneBook.list);
